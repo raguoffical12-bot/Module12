@@ -1,38 +1,44 @@
-# 📚 Stack using Linked List: Check and Print the Index Value of the Elements Stored in the Stack
+# 12 d Queue Using Linked List – Enqueue and All Operations
 
-This Python program demonstrates how to:
-1. Create a stack using a list.
-2. Add elements to the stack.
-3. Print the index and corresponding value of each element in the stack.
+## Aim
 
-## 🎯 Aim
+To write a Python program to add 4 elements to a queue and print the elements present at the front and rear of the queue.
 
-To write a Python program that:
-- Creates a stack using a list.
-- Adds elements to the stack.
-- Prints the index values of the stack elements along with the corresponding values.
+## Algorithm
 
-## 🧠 Algorithm
+1. Start  
+2. Create a queue  
+3. Append elements to the queue  
+4. Print the front and rear elements in the queue  
+5. Stop
 
-1. **Create an Empty Stack**:
-   - Initialize an empty list `stack` to store elements.
+## Program
 
-2. **Add Elements to the Stack**:
-   - Append elements (e.g., 'a', 'b', 'c') to the stack using the `append()` method.
+```
+reg no:212223070021
+name:Ragunandhan S
+from collections import deque
 
-3. **Print the Initial Stack**:
-   - Print the contents of the stack with a message "Initial stack: ".
+queue = deque()
 
-4. **Iterate through the Stack**:
-   - Use a `for` loop with `range()` to iterate through the stack.
-   - Print the index value and corresponding element at that index.
+for i in range(4):
+    val = input(f"Enter element {i+1}: ")
+    queue.append(val)
 
-5. **Print Index and Value**:
-   - For each element in the stack, print the index and the value at that index.
+print("\nQueue contents:")
+print(list(queue))
 
-## 📝 Program
-Add Code here
+if queue:
+    print(f"Front element: {queue[0]}")
+    print(f"Rear element: {queue[-1]}")
+else:
+    print("Queue is empty.")
 
-## Sample Input & Output
 
-## Result
+
+## OUTPUT
+![image](https://github.com/user-attachments/assets/5d77a674-79cf-4cf1-8e15-0e9a3ea5ca16)
+
+
+## RESULT
+thus the program is executed successfully.
