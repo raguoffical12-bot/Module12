@@ -1,36 +1,38 @@
-# 🔁 Queue using Linked List: Display Front and Rear Elements of a Queue
+# Ex.No 12.b Stack Using Linked List – Push and Index Display
 
-## 🎯 Aim
+## Aim
 
-To write a Python program to:
-- Insert elements into a queue.
-- Display the element at the **front** of the queue.
-- Display the element at the **rear** of the queue.
+To write a Python program to insert 3 elements into a stack and display the index value of each element stored in the stack.
 
----
+## Algorithm
 
-## 🧠 Algorithm
+1. Start  
+2. Create a stack  
+3. Append elements to the stack  
+4. Use a loop to print the index and value of each element in the stack  
+5. Print the result  
+6. Stop
 
-1. **Initialize Queue**:
-   - Create an empty list called `queue`.
-
-2. **Insert Elements**:
-   - Use the `append()` method to add `'a'`, `'b'`, `'c'`, and `'d'` to the queue.
-
-3. **Display Initial Queue**:
-   - Print `"Initial Queue:"` followed by the current state of the queue.
-
-4. **Identify Front and Rear**:
-   - Set `front = queue[0]` for the front element.
-   - Set `rear = queue[-1]` for the rear element.
-
-5. **Print Results**:
-   - Display the front and rear elements with appropriate messages.
-
----
 ## Program
-Add code here
+
+```
+reg no:212223070021
+name: Ragunandhan S
+stack = []
+
+for i in range(3):
+    val = input(f"Enter element {i+1}: ")
+    stack.append(val)
+
+print("\nStack elements with index values:")
+for index, value in enumerate(stack):
+    print(f"Index {index}: {value}")
+
+```
 
 ## Output
+![image](https://github.com/user-attachments/assets/c13a1e98-291c-411b-ad34-4a4b953cf56a)
+
 
 ## Result
+thus the program is executed successfully.
