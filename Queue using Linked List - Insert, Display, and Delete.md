@@ -1,38 +1,41 @@
-# 🌀 Queue using Linked List - Insert, Display, and Delete
+# 12 c Queue Using Linked List – Display, Peek, and Pop
 
-## 🎯 Aim
+## Aim
 
-To write a Python program that:
-- Inserts elements into a queue.
-- Displays all inserted elements.
-- Deletes the first element.
-- Displays the updated queue after deletion.
+To write a Python program to insert 3 elements into a queue and display each element with its index.
 
----
+## Algorithm
 
-## 🧠 Algorithm
-
-1. **Create a Queue**:
-   - Initialize an empty list named `queue`.
-
-2. **Insert Elements**:
-   - Use the `append()` method to insert elements `'a'`, `'b'`, and `'c'` into the queue.
-
-3. **Display Initial Queue**:
-   - Print the message `"Queue after elements are inserted:"` followed by the queue contents.
-
-4. **Delete First Element**:
-   - Use `pop(0)` to remove the first inserted element (FIFO - First In First Out).
-   - Print the message `"Deleting the first element inserted:"` and the element removed.
-
-5. **Display Updated Queue**:
-   - Print the message `"Queue after the first element is deleted:"` followed by the updated queue contents.
-
----
+1. Start  
+2. Create a queue  
+3. Append elements to the queue  
+4. Use a loop to print each element and its index  
+5. Stop
 
 ## Program
-Add Code Here
 
-## Output
+```
+reg no:212223070021
+name:Ragunandhan S
+import queue
 
-## Result
+q = queue.Queue()
+
+q.put('Element 1')
+q.put('Element 2')
+q.put('Element 3')
+
+index = 0
+while not q.empty():
+    element = q.get()
+    print(f"Index: {index}, Element: {element}")
+    index += 1
+
+
+```
+
+## OUTPUT
+![Screenshot 2025-05-21 104314](https://github.com/user-attachments/assets/703160b2-b1b3-49ef-b080-5543a08fe02d)
+
+## RESULT
+thus the program is executed successfully.
